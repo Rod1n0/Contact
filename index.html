@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Contact links to Redouane's social profiles - LinkedIn, GitHub, Spotify and more.">
+  <meta property="og:title" content="xd.rodino - Contact ">
+  <meta property="og:description" content="Find me on GitHub, LinkedIn, Spotify, and Letterboxd.">
+  <meta property="og:image" content="./pfp.jpg">
+  <meta property="og:type" content="website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact </title>
+  <style>
+  /* ===== CSS RESET (minimal) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== COLOR SYSTEM ===== */
+:root {
+  --bg: #0b0d10;
+  --panel: #111418;
+  --border: #1c2128;
+  --text-primary: #e6e8eb;
+  --text-secondary: #9aa4af;
+  --accent: #ffffff;
+}
+
+/* ===== BASE ===== */
+body {
+  min-height: 100vh;
+  background: radial-gradient(
+      1200px 600px at 50% -10%,
+      #141821 0%,
+      var(--bg) 60%
+  );
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem 2rem 2rem;
+  background: rgba(17, 20, 24, 0.75);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+/* ===== AVATAR ===== */
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== TEXT ===== */
+h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin: 0 0 0.75rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+}
+
+/* ===== LINKS ===== */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.link:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.link:active {
+  transform: translateY(0);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 1.75rem;
+  font-size: 0.75rem;
+  color: #6f7a85;
+  opacity: 0.8;
+}
+  </style>  
+</head>
+<body>
+  <section class="container">
+    <!-- profile picture -->  
+    <img src="./pfp.jpg" alt="Profile picture" class="avatar" width="300" height="300"/>
+    
+    <h1>@xd.rodino</h1>
+    <p>Formula One, Football, Music Enthusiast<br>Web & Software Developer when I feel like it<br></p>
+    <a href="https://www.linkedin.com/in/redouane-boudissa" target="_blank" class="link">🎓 LinkedIn</a>
+    <a href="https://github.com/Rod1n0" target="_blank" class="link">💻 GitHub</a>
+    <a href="https://open.spotify.com/user/31fmqog7nyhk22ij7hgb2ponsjfu?si=1d59f70e32f440b6" target="_blank" class="link">🎸 Spotify</a>
+    <a href="https://boxd.it/aIo3H" target="_blank" class="link">🎬 Letterboxd</a>
+    <footer>
+      Made with ❤️ by Rod1n0
+    </footer>
+  </section>
+</body>
+</html>
